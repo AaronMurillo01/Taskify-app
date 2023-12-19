@@ -1,5 +1,7 @@
 import { format } from "date-fns";
-import { AuditLog } from "@prisma/client"
+import { Prisma } from "@prisma/client";
+
+type AuditLog = Prisma.AuditLog;
 
 import { generateLogMessage } from "@/lib/generate-log-message";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
